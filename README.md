@@ -6,3 +6,6 @@
 1. プロジェクトを保存したいファルダ上で `npx create-next-app@latest nextjs-dashboard --example "https://github.com/vercel/next-learn/tree/main/dashboard/starter-example" --use-pnpm` を実行して下さい。  
 1. `pnpm i` を実行して下さい。
 1. `pnpm dev` で開発サーバを起動できます。[http://localhost:3000](http://localhost:3000)でアクセスできます。  
+
+## 注意
+*vercelでdeployしてDBを作成した際、.envがpushされないように.gitignoreに追記する必要があります。*
