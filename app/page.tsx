@@ -35,14 +35,14 @@ export default function Page() {
             src = "/hero-desktop.png"
             width = {1000}
             height = {760}
-            className = "hidden md:block"
+            className = "hidden md:block" //md（@media(min-width: 768px)）以上で表示
             alt = "Screenshots of the dashboard project showing desktop version"
           />
           <Image
             src = "/hero-mobile.png"
             width = {560}
             height = {620}
-            className = "block md:hidden"
+            className = "block md:hidden" //md以下で表示
             alt = "Screenshots of the dashboard project showing mobile version"
           />
 

@@ -1,5 +1,9 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
 
+// export const experimental_ppr = true; // canary versionがインストールできないので諦め
+
+// Layoutコンポーネント。これは再レンダリングされない。
+// 子要素をpropsとして受け取る。overviewやcustomers,invoicesが入る。
 export default function Layout({ children }:{ children: React.ReactNode }){
     return(
         <div className = "flex h-screen flex-col md:flex-row md:overflow-hidden">

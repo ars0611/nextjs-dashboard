@@ -62,7 +62,7 @@ export async function fetchCardData() {
       SUM(CASE WHEN status = 'pending' THEN amount ELSE 0 END) AS "pending"
       FROM invoices`;
 
-      //ここで並列に実行しているらしい
+      //ここで並列に実行しているらしい（上の英語にそう書いてあったわ）
     const data = await Promise.all([
       invoiceCountPromise,
       customerCountPromise,

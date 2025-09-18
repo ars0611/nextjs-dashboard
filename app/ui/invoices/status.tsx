@@ -1,6 +1,7 @@
 import { CheckIcon, ClockIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 
+// 引数に応じてクラス名を切り替える。これはかなり便利かもしれない。
 export default function InvoiceStatus({ status }: { status: string }) {
   return (
     <span
